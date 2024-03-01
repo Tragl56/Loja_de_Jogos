@@ -3,8 +3,8 @@
  API para os jogadores 
 
 - Categorias
-    - [Jogos](#listar-todas)
-    - [Categoria](#detalhar-categorias)
+    - [Jogos](#jogos)
+    - [Categoria](#categorias)
     - [Cadastrar](#cadastrar-categoria)
     - [Apagar](#apagar-categoria)
     - [Editar](#editar-categoria)
@@ -35,7 +35,7 @@ retorna um array com todas as categorias.
 |200|Dados retornados com sucesso
 ---
 
-### Detalhar Categorias 
+### Categorias 
 
 `GET` /categoria/{id}
 
