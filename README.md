@@ -5,9 +5,9 @@
 - Categorias
     - [Jogos](#jogos)
     - [Categoria](#categorias)
-    - [Cadastrar](#cadastrar-categoria)
-    - [Apagar](#apagar-categoria)
-    - [Editar](#editar-categoria)
+    - [Cadastrar](#cadastrar-jogo)
+    - [Apagar](#apagar-jogo)
+    - [Editar](#editar-jogo)
 
 - Movimentações
 ---
@@ -15,9 +15,9 @@
 
  ### Jogos
 
-`GET` /categoria
+`GET` /JOGO
 
-retorna um array com todas as categorias.
+retorna um array com todas as jogos.
 
 **Exemplo de Resposta**
 
@@ -37,9 +37,9 @@ retorna um array com todas as categorias.
 
 ### Categorias 
 
-`GET` /categoria/{id}
+`GET` /JOGO/{id}
 
-Retornar os dados da categoria com o `id` informado.
+Retornar os dados do jogo com o `id` informado.
 
 **Exemplo de Resposta** 
 
@@ -58,21 +58,21 @@ Retornar os dados da categoria com o `id` informado.
 | código | descrição |
 |--------|-----------|
 |200|Dados retornados com sucesso
-|404| Id da categoria não encontrado
+|404| Id do jogo não encontrado
 
 ___
 
-### Cadastrar Categoria
+### Cadastrar Jogo
 
-`POST` /categoria
+`POST` /JOGO
 
-Insere uma nova categoria.
+Insere um novo Jogo.
 
 **Corpo da Requisição** 
 
 |campo|tipo|obrigatório|descrição
 |-----|----|:-----------:|---------
-|nome|string|✅|Um nome curto para a categoria
+|nome|string|✅|Um nome curto para o jogo
 |icone|string|❌|O nome do ícone conforme Material Icons
 
 
@@ -97,29 +97,29 @@ Insere uma nova categoria.
 
 | código | descrição |
 |--------|-----------|
-|201|Categoria criada com sucesso
+|201|Jogo criada com sucesso
 |400|Erro de validação - verifique o corpo da requisição
 
 ---
 
-### Apagar Categoria
+### Apagar JOGO
 
-`DELETE` /categoria/{id}
+`DELETE` /JOGO/{id}
 
-Apaga a categoria com o `id` informado.
+Apaga o jogo com o `id` informado.
 
 **Códigos de Status** 
 
 | código | descrição |
 |--------|-----------|
-|204|Categoria apagada com sucesso
+|204|Jogo apagada com sucesso
 |404| Id da categoria não encontrado
 
 ___
 
-### Editar Categoria
+### Editar jogo
 
-`PUT` /categoria/{id}
+`PUT` /JOGO/{id}
 
 Atualiza os dados da categoria com o `id` informado.
 
@@ -127,7 +127,7 @@ Atualiza os dados da categoria com o `id` informado.
 
 |campo|tipo|obrigatório|descrição
 |-----|----|:-----------:|---------
-|nome|string|✅|Um nome curto para a categoria
+|nome|string|✅|Um nome curto para o jogo
 |icone|string|✅|O nome do ícone conforme Material Icons
 
 
@@ -152,8 +152,8 @@ Atualiza os dados da categoria com o `id` informado.
 
 | código | descrição |
 |--------|-----------|
-|200|Categoria atualizada com sucesso
+|200|Jogo atualizada com sucesso
 |400| A validação falhou - verifique o corpo da requisição
-|404| Id da categoria não encontrado
+|404| Id do jogo  não encontrado
 
  
