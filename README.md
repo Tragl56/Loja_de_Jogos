@@ -155,5 +155,3 @@ Atualiza os dados da categoria com o `id` informado.
 |200|Jogo atualizada com sucesso
 |400| A validação falhou - verifique o corpo da requisição
 |404| Id do jogo  não encontrado
-
- 
