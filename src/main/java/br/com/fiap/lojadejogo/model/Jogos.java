@@ -1,14 +1,16 @@
 package br.com.fiap.lojadejogo.model;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.util.Random;
+import lombok.Data;
 
-public record Jogos(Long id, String nome, String icone) {
-
-    public Jogos (Long id, String nome, String icone){
-        var key = (id != null) ? id : Math.abs( new Random().nextLong() );
-        this.id = key;  
-        this.nome = nome;  
-        this.icone = icone;  
-    }
+@Data
+@Entity
+public class Jogos{
+        @Id
+        private Long id;
+        private String nome;
+        private String icone;
+    
  
 }
