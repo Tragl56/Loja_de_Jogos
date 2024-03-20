@@ -26,7 +26,7 @@ retorna um array com todas as jogos.
   {
       "id":1,
       "nome":"Jogos",
-      "icone"Game"
+      "icone":"Game"
   }
 ]
 ```
